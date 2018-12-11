@@ -11,6 +11,8 @@
         android:value="face" />
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -48,12 +50,28 @@
         <activity android:name=".DetailActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".FcmActivity" />
-        <activity android:name=".Main2Activity"
+        <activity
+            android:name=".Main2Activity"
             android:screenOrientation="portrait">
             <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Main3Activity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+
+        <receiver android:name=".NewAppWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/new_app_widget_info" />
+        </receiver>
+
+        <activity android:name=".Main4Activity"></activity>
     </application>
 
 </manifest>

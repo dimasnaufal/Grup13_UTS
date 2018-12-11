@@ -9,7 +9,13 @@
     <string name="not_saved">Image not saved!</string>
     <string name="error">Error finding image</string>
     <string name="go">GO</string>
+    <string name="location_text">"Latitude: %1$.4f \n Longitude: %2$.4f \n Timestamp: %3$tr"</string>
+    <string name="alamat_text">"Alamat: %1$s \n Timestamp: %2$tr"</string>
     <string name="permission_denied">Permission denied</string>
     <string name="imageview_description">The imageview that contains the Meme picture</string>
     <string name="no_faces_message">No Faces Detected</string>
+    <string name="appwidget_text">MEMES</string>
+    <string name="add_widget">Add widget</string>
+    <string name="date_count_format">%1$d @1%2$s</string>
+    <string name="widget_button_update">MEME! LIHAT LOKASI GUE</string>
 </resources>

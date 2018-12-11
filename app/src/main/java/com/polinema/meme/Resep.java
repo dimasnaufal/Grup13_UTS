@@ -23,21 +23,6 @@ public class Resep {
     public Resep(String nama, String detail, String rating,int gambar){
         this.nama_meme = nama;
         this.detail_meme = detail;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         this.rating_meme = rating;
         this.gambar_meme = gambar;
     }

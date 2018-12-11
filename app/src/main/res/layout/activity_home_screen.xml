@@ -19,7 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/nama_app"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="-5dp"
         android:fontFamily="sans-serif-smallcaps"
         android:text="Are you sure??"
         android:textColor="@color/Magenta"
@@ -33,6 +33,19 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/button_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_next"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="12dp"
+        android:background="@color/Blue"
+        android:text="Video Lucu"
+        android:textColor="@color/White"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/button_next"

@@ -6,37 +6,60 @@
     android:background="@drawable/ks2"
     tools:context=".ResepDetailFragment">
 
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_margin="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:id="@+id/textJudul"
-        android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="monospace"
-        android:textColor="@color/Brown"
-        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-        android:text="Nama Meme" />
 
-    <TextView
-        android:id="@+id/textDetail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="casual"
-        android:textColor="@color/colorPrimaryDark"
-        android:text="Detail Meme"/>
+            <ImageView
+                android:id="@+id/imgmeme"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_gravity="center" />
 
-    <TextView
-        android:id="@+id/textRating"
-        android:fontFamily="sans-serif-smallcaps"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/Magenta"
-        android:text="Rating Meme"/>
+            <TextView
+                android:id="@+id/textJudul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgmeme"
+                android:fontFamily="monospace"
+                android:text="Nama Meme"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textColor="@color/Brown" />
 
-    <ImageView
-        android:layout_gravity="center"
-        android:id="@+id/imgmeme"
-        android:layout_width="195dp"
-        android:layout_height="200dp" />
+            <TextView
+                android:id="@+id/textRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textJudul"
+                android:padding="5dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="Rating Meme"
+                android:textColor="@color/Magenta" />
+
+            <TextView
+                android:id="@+id/textDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textRating"
+                android:padding="5dp"
+                android:fontFamily="casual"
+                android:text="Detail Meme"
+                android:textColor="@color/colorPrimaryDark" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
 
 </LinearLayout>

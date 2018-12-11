@@ -10,12 +10,14 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
     private static final String TAG = "FCM_Dimdim";
 
+
     @Override
     public void onNewToken(String s) {
         super.onNewToken(s);
         Log.e("NEW_TOKEN", s);
     }
     // token = punya nilai id unik, ketika apk diuninstall dan dilaunch lagi, token akan berubah lagi
+
 
     public void newToken()
     {

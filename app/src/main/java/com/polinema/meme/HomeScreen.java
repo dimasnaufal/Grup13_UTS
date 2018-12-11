@@ -11,6 +11,7 @@ public class HomeScreen extends AppCompatActivity {
 
     Button button;
     Button button2;
+    Button button3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +20,7 @@ public class HomeScreen extends AppCompatActivity {
 
         button = (Button)findViewById(R.id.button_next);
         button2 = (Button)findViewById(R.id.button_meme);
+        button3 = (Button)findViewById(R.id.button_video);
 
         button.setOnClickListener(new View.OnClickListener() {
 
@@ -41,5 +43,17 @@ public class HomeScreen extends AppCompatActivity {
             }
         });
 
-        }
+        button3.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                Intent video = new Intent(HomeScreen.this, Main3Activity.class);
+
+                startActivity(video);
+            }
+        });
+
+
+    }
 }

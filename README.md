@@ -1,4 +1,4 @@
-# Grup13_UTS
+# Grup13_UAS
 
 # Nama & No Absen
 Dimas Naufal Fikri      (8)
@@ -7,6 +7,16 @@ Wahyu Arum              (26)
 
 # Judul aplikasi dan deskripsi singkatnya 
 Meme Creator adalah aplikasi yang berisi tentang karakter-karakter meme beserta penjelasannya dan mengganti wajah dengan meme 
+Ditambahkan dengan beberapa fitur lainnya
+
+## Screenshots
+![Layar Home](https://i.ibb.co/Ny5wvWf/home.jpg)
+![Library_cam](https://i.ibb.co/BsqD13k/librarycam.jpg)
+![Location](https://i.ibb.co/4NcnLzn/lok.jpg)
+![Location](https://i.ibb.co/93GH132/lok2.jpg)
+![Meme](https://i.ibb.co/ZLWf9ZX/meme.jpg)
+![Media](https://i.ibb.co/qJs4TD2/video.jpg)
+![Widget](https://i.ibb.co/f1CLk19/wijet.jpg)
 
 # Requirement (Android OS and level)
  minSdkVersion yang digunakan 15 
@@ -28,10 +38,20 @@ MainActivity.java
 Class yang menampilkan fragment list dan detail
 Main2Activity.java
 Class yang digunakan untuk mengambil picture dan penggunaan library
+Main3Activity.java
+Class yang digunakan untuk penggunaan media
+Main4Activity.java
+Class yang digunakan untuk location
+DapatkanAlamatTask.java
+Class yang digunakan untuk menambatkan alamat geocode longitude dan latitude
 MyFirebaseMessageService.java
 Kelas ini berfungsi untum mengambil data JSON untuk selanjutnya diparsing ke kelas MyNotificationManager.java
 HomeScreen.java
 kelas pertama yang akan muncul (halaman home)
+NewAppWidget.java
+Class yang digunakan untuk menjalankan widget
+SinetronModel.java
+Class yang digunakan untuk memanggil video dari raw
 
 # Lisensi
 /*
